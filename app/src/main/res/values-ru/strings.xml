@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Яндекс.Переводчик</string>
+    <string name="translate">Перевод</string>
+    <string name="favourite">История</string>
+    <string name="settings">Настройки</string>
+    <string name="about_header">О программе</string>
+    <string name="about">Создано для тестового задания на участие
+        в проекте Яндекс Мобилизация 2017</string>
+
+    <string-array name="tabTitles">
+        <item>История</item>
+        <item>Избранное</item>
+    </string-array>
+    
+    <string-array name="langlist">
+        <item>Русский</item>
+        <item>Английский</item>
+        <item>Немецкий</item>
+        <item>Французский</item>
+        <item>Японский</item>
+    </string-array>
+
+    <string-array name="abblist">
+        <item>ru</item>
+        <item>en</item>
+        <item>de</item>
+        <item>fr</item>
+        <item>ja</item>
+    </string-array>
+
+    <string name="yandexTranslateAnnotation">Переведено сервисом «Яндекс.Переводчик»: http://translate.yandex.ru/</string>
+
+    <string name="yandexDictAnnotation">Реализовано с помощью сервиса «Яндекс.Словарь»: https://tech.yandex.ru/dictionary/</string>
+
+    <string-array name="poslist">
+        <item>существительное</item>
+        <item>глагол</item>
+        <item>прилагательное</item>
+        <item>причастие</item>
+        <item>деепричастие</item>
+        <item>междометие</item>
+        <item>местоимение</item>
+        <item>числительное</item>
+        <item>наречие</item>
+    </string-array>
+
+</resources>

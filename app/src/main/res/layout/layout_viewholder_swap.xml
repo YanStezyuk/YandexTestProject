@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swap_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/default_margin_horizontal"
+    android:paddingRight="@dimen/default_margin_horizontal"
+    android:paddingTop="@dimen/default_margin_vertical">
+
+    <Spinner
+        android:id="@+id/source_lang_spinner"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight=".5"
+        android:entries="@array/langlist" />
+
+    <ImageView
+        android:id="@+id/swap_lang_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_popup_sync" />
+
+    <Spinner
+        android:id="@+id/target_lang_spinner"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight=".5"
+        android:entries="@array/langlist" />
+
+</LinearLayout>

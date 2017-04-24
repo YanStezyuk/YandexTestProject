@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Yandex.Translate</string>
+    <string name="translate">Translate</string>
+    <string name="favourite">History</string>
+    <string name="settings">Settings</string>
+    <string name="about_header">About</string>
+    <string name="about">Created as a test task for participation in a project
+        Yandex Mobilization 2017</string>
+
+    <string-array name="tabTitles">
+        <item>History</item>
+        <item>Favourites</item>
+    </string-array>
+
+    <string-array name="langlist">
+        <item>Russian</item>
+        <item>English</item>
+        <item>German</item>
+        <item>French</item>
+        <item>Japanese</item>
+    </string-array>
+
+    <string-array name="abblist">
+        <item>ru</item>
+        <item>en</item>
+        <item>de</item>
+        <item>fr</item>
+        <item>ja</item>
+    </string-array>
+
+    <string name="yandexTranslateAnnotation">Translated by service «Yandex.Translate»: http://translate.yandex.ru/</string>
+
+    <string name="yandexDictAnnotation">Implemented with the help of the service «Yandex.Dictionary»: https://tech.yandex.ru/dictionary/</string>
+
+    <string-array name="poslist">
+        <item>noun</item>
+        <item>verb</item>
+        <item>adjective</item>
+        <item>participle</item>
+        <item>gerund</item>
+        <item>interjection</item>
+        <item>pronoun</item>
+        <item>numeral</item>
+        <item>adverb</item>
+    </string-array>
+
+</resources>

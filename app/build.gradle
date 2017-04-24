@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+// App
+def appVersion = 1
+def appVersionName = "1.0"
+
+// SDK
+def minSdk = 17
+def targetSdk = 25
+def toolsVersion = "25.0.2"
+
+// Libraries
+def supportLibVer = "25.3.1"
+def retrofitVer = "2.1.0"
+def butterKnifeVer = "8.5.1"
+def okHttpVersion = "3.4.2"
+def dbflowVersion = "4.0.0-beta5"
+def busVersion = "3.0.0"
+
+
+android {
+
+    compileSdkVersion targetSdk
+    buildToolsVersion toolsVersion
+
+    defaultConfig {
+        applicationId "com.example.yan.testproject"
+        vectorDrawables.useSupportLibrary = true
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+        versionCode appVersion
+        versionName appVersionName
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile "com.android.support:appcompat-v7:$supportLibVer"
+    compile "com.android.support.constraint:constraint-layout:1.0.2"
+
+    compile "com.android.support:cardview-v7:$supportLibVer"
+    compile "com.android.support:recyclerview-v7:$supportLibVer"
+
+    compile "com.android.support:support-v4:$supportLibVer"
+
+    compile "com.android.support:design:$supportLibVer"
+
+    //EventBus
+    compile "org.greenrobot:eventbus:$busVersion"
+
+    // Retrofit
+    compile "com.squareup.retrofit2:retrofit:$retrofitVer"
+    compile "com.squareup.retrofit2:converter-gson:$retrofitVer"
+
+    // OkHttp
+    compile "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
+
+    // ButterKnife
+    compile "com.jakewharton:butterknife:$butterKnifeVer"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterKnifeVer"
+
+    //DBFlow
+    annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflowVersion}"
+    compile "com.github.Raizlabs.DBFlow:dbflow-core:${dbflowVersion}"
+    compile "com.github.Raizlabs.DBFlow:dbflow:${dbflowVersion}"
+
+}
